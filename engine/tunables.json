@@ -1,0 +1,19 @@
+{
+  "_about": "The only file Coach writes. Every change is bounded (see coach.py BOUNDS), logged in the tunable_changes table, and reverted automatically if results drop.",
+  "version": 1,
+  "topic_weights": {
+    "ai_search": 1.0,
+    "local_seo_reviews": 1.0,
+    "web_crm_automation": 1.0,
+    "saas_startup_growth": 1.0,
+    "paid_social_orm": 1.0,
+    "ecommerce_midmarket": 1.0,
+    "agency_and_open": 1.0
+  },
+  "sub_priority": {},
+  "target_words": 170,
+  "freshness_max_hours": 72,
+  "queries_added": {},
+  "queries_retired": {},
+  "extra_subs": {}
+}

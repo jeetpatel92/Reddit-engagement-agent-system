@@ -1,0 +1,31 @@
+{
+  "_about": "Policies verified by hand on 2026-09-25 (subreddits.md). Used until Rulekeeper reads the live rules through the API, and as a floor afterwards: a live read can make a sub stricter, never looser than hold_until_karma.",
+  "googleads": {
+    "self_promotion": "banned",
+    "links": "not_mentioned",
+    "ai_content_banned": false,
+    "min_karma": -1,
+    "min_account_age_days": -1,
+    "promo_threads": [],
+    "summary": "Spam covers self promotion. Practitioner heavy. Link the sub's own wiki before anything of ours."
+  },
+  "FacebookAds": {
+    "self_promotion": "banned",
+    "links": "not_mentioned",
+    "ai_content_banned": false,
+    "min_karma": -1,
+    "min_account_age_days": -1,
+    "promo_threads": ["Official Agency Ad Accounts (vendor thread, not for us)"],
+    "summary": "No promotional posts. Very active; early answers get seen."
+  },
+  "Entrepreneur": {
+    "self_promotion": "designated_threads_only",
+    "links": "restricted",
+    "ai_content_banned": true,
+    "min_karma": -1,
+    "min_account_age_days": -1,
+    "promo_threads": ["Talent Tuesday"],
+    "summary": "Rule 4: original and human content only. No personal blogs or consulting promotion. Heavy anti bot tooling.",
+    "hold_until_karma": 50
+  }
+}

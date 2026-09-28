@@ -1,0 +1,116 @@
+{
+  "_about": "Engine settings. Hand-edited only: Coach never writes here. Coach's bounded knobs live in tunables.json.",
+
+  "timezone": "Asia/Kolkata",
+
+  "schedule": {
+    "daily_run": "22:00",
+    "publisher_tick_seconds": 60,
+    "inbox_every_minutes": 15,
+    "checkpoints_every_minutes": 60,
+    "health_every_hours": 6,
+    "coach_weekday": "Sun",
+    "coach_time": "10:00",
+    "deadman_hours": 48
+  },
+
+  "models": {
+    "default": "claude-opus-5",
+    "_default_note": "One model everywhere keeps one prompt cache. Classifier roles run at low effort. Swap a role to claude-haiku-4-5 only if the bill says so.",
+    "roles": {
+      "screen":  { "effort": "low" },
+      "rules":   { "effort": "low" },
+      "triage":  { "effort": "low" },
+      "analyst": { "effort": "medium" },
+      "writer":  { "effort": "high" },
+      "critic":  { "effort": "high" },
+      "closer":  { "effort": "medium" },
+      "coach":   { "effort": "high" }
+    }
+  },
+  "use_server_fallbacks": true,
+
+  "run_budget": {
+    "_note": "Per daily run. The run stops drafting when either is exceeded. Cache reads count at 10%.",
+    "max_input_tokens": 700000,
+    "max_output_tokens": 90000
+  },
+
+  "scout": {
+    "posts_per_sub": 25,
+    "search_limit": 25,
+    "max_raw_to_screen": 60,
+    "max_candidates": 15,
+    "max_comments_fresh": 150,
+    "evergreen_max_age_days": 170,
+    "evergreen_max_comments": 300,
+    "top_comments": 8,
+    "min_ascii_ratio": 0.85
+  },
+
+  "drafting": {
+    "max_revisions": 2,
+    "min_words": 40,
+    "max_words": 320,
+    "reply_min_words": 8,
+    "reply_max_words": 200,
+    "min_total_score": 6,
+    "fallback_min_score": 4,
+    "max_per_sub_per_run": 2
+  },
+
+  "publisher": {
+    "approval_expiry_hours": 12,
+    "min_gap_minutes": 5,
+    "jitter_seconds": 180,
+    "max_post_attempts": 3,
+    "posting_stuck_minutes": 5
+  },
+
+  "replies": {
+    "max_per_day": 5
+  },
+
+  "breakers": {
+    "sub_removal_window_days": 14,
+    "sub_removal_threshold": 2,
+    "sub_pause_days": 30,
+    "global_removals_24h": 3,
+    "karma_drop_3d": 10,
+    "forbidden_subs_24h": 2
+  },
+
+  "links": {
+    "neutral_domains": [
+      "support.google.com", "developers.google.com", "ads.google.com", "business.google.com",
+      "www.facebook.com", "facebook.com", "developers.facebook.com",
+      "schema.org", "knowledge.hubspot.com", "help.shopify.com", "wordpress.org",
+      "www.reddit.com"
+    ],
+    "neutral_links_from_day": 8
+  },
+
+  "blocked_terms": [],
+  "_blocked_terms_note": "Client, employer and project names that must never appear. Add them here; the Critic's code check blocks any draft containing one (case insensitive).",
+
+  "disclosure_patterns": [
+    "\\bI run\\b",
+    "\\bmy (?:small )?(?:agency|company|firm|business|consultancy)\\b",
+    "\\bI(?:'m| am) the founder\\b",
+    "\\bI founded\\b",
+    "\\bdisclosure\\b",
+    "\\bI do this for a living\\b",
+    "\\bmy agency'?s? blog\\b"
+  ],
+
+  "rules_refresh_days": 7,
+  "coach": {
+    "min_comments_per_arm": 10,
+    "max_change_factor": 1.2,
+    "revert_if_below": 0.8,
+    "min_after_comments": 5,
+    "max_new_queries_per_week": 2,
+    "exemplars_keep": 8,
+    "negatives_keep": 8
+  }
+}

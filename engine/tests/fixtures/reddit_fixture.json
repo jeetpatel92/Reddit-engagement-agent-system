@@ -1,0 +1,292 @@
+{
+ "me": {
+  "name": "test_user",
+  "total_karma": 1,
+  "comment_karma": 1,
+  "link_karma": 0,
+  "created_utc": null
+ },
+ "threads": [
+  {
+   "id": "fxA",
+   "sub": "FacebookAds",
+   "age_hours": 1,
+   "num_comments": 2,
+   "score": 1,
+   "author": "op_candles",
+   "url": "https://www.reddit.com/r/FacebookAds/comments/fxA/example/",
+   "title": "Two sales on day three, nothing on day four. Normal or broken?",
+   "body": "Small candle store, first proper Meta test. One campaign, one broad ad set, four creatives, about $25 a day optimised for purchases. Day three brought two sales from one creative. Day four: CTR halved, CPC tripled, zero add to carts, and most of the budget gone by lunchtime. Should I leave it alone, and how do I tell which creative is actually working when Meta spends almost everything on one of them?",
+   "comments": []
+  },
+  {
+   "id": "fxB",
+   "sub": "FacebookAds",
+   "age_hours": 2,
+   "num_comments": 1,
+   "score": 2,
+   "author": "op_growthops",
+   "url": "https://www.reddit.com/r/FacebookAds/comments/fxB/example/",
+   "title": "How long do you wait before killing an ad when the sale lands 30 days after the click?",
+   "body": "We sell an annual plan with a free trial, so the purchase we care about shows up weeks after the click. Our rule turns ads off after twice the target cost with no conversion, which judges them on day three. We are clearly killing some winners and keeping some losers. Is there a sane way to set this per account, and to measure what the kills cost us?",
+   "comments": []
+  },
+  {
+   "id": "fxC",
+   "sub": "googleads",
+   "age_hours": 20,
+   "num_comments": 12,
+   "score": 2,
+   "author": "op_homeservices",
+   "url": "https://www.reddit.com/r/googleads/comments/fxC/example/",
+   "title": "Home services account: calls are the main conversion and the tracking is a mess",
+   "body": "Running search for a small group of home services locations. Phone calls are where the money is and most jobs book on the first call. Right now calls from ads over a minute and form fills are primary conversions, website calls are secondary because I cannot filter them by duration. Ad groups by service, tight phrase and exact keywords. Performance is poor and I am not sure where to look first.",
+   "comments": [
+    {
+     "id": "c1",
+     "author": "commenter_1",
+     "body": "Send qualified calls back as offline conversions from your call tracking tool, with a duration filter.",
+     "score": 5,
+     "replies": [
+      {
+       "id": "c1r",
+       "author": "op_homeservices",
+       "body": "Setting that up now, thanks.",
+       "score": 2,
+       "replies": []
+      }
+     ]
+    },
+    {
+     "id": "c2",
+     "author": "commenter_2",
+     "body": "What is your impression share? If budget is limited you may only be showing late in the day.",
+     "score": 3,
+     "replies": []
+    },
+    {
+     "id": "c3",
+     "author": "commenter_3",
+     "body": "Look at each location separately rather than one account average.",
+     "score": 3,
+     "replies": []
+    },
+    {
+     "id": "c4",
+     "author": "commenter_4",
+     "body": "Test broader targeting slowly once conversion data is clean.",
+     "score": 4,
+     "replies": []
+    }
+   ]
+  },
+  {
+   "id": "fxD",
+   "sub": "googleads",
+   "age_hours": 30,
+   "num_comments": 15,
+   "score": 8,
+   "author": "op_brandmarketer",
+   "url": "https://www.reddit.com/r/googleads/comments/fxD/example/",
+   "title": "Account structure for a candle and home fragrance brand with 60 products",
+   "body": "In house marketer, not a PPC specialist. 60 products across candles, diffusers, gift sets and refills. We run one Performance Max campaign plus brand search. Should we split by category, margin or best sellers? Is Standard Shopping or non brand search still worth running next to PMax?",
+   "comments": [
+    {
+     "id": "d1",
+     "author": "commenter_5",
+     "body": "Start with your best sellers in their own campaign and keep the rest together.",
+     "score": 6,
+     "replies": []
+    },
+    {
+     "id": "d2",
+     "author": "commenter_6",
+     "body": "Label the feed by margin before splitting anything.",
+     "score": 5,
+     "replies": []
+    },
+    {
+     "id": "d3",
+     "author": "commenter_7",
+     "body": "Do not over segment; structure around economics, not the catalogue tree.",
+     "score": 7,
+     "replies": []
+    },
+    {
+     "id": "d4",
+     "author": "commenter_8",
+     "body": "Feed titles and images matter as much as campaign structure.",
+     "score": 4,
+     "replies": []
+    }
+   ]
+  },
+  {
+   "id": "fxE",
+   "sub": "googleads",
+   "age_hours": 60,
+   "num_comments": 14,
+   "score": 4,
+   "author": "op_foodtruck",
+   "url": "https://www.reddit.com/r/googleads/comments/fxE/example/",
+   "title": "Late night food truck: how do I get more orders from people searching on Google?",
+   "body": "We park in the same spot Thursday to Sunday, 8pm to 2am. We have a Google profile but barely show up.",
+   "comments": []
+  },
+  {
+   "id": "fxF",
+   "sub": "googleads",
+   "age_hours": 70,
+   "num_comments": 10,
+   "score": 2,
+   "author": "op_newplumber",
+   "url": "https://www.reddit.com/r/googleads/comments/fxF/example/",
+   "title": "Are Local Services Ads worth it for a brand new plumbing business?",
+   "body": "Just started on my own, profile and website are up, going through LSA verification now. Pay per lead sounds good but I do not have much to spend. Realistic to get work from it?",
+   "comments": []
+  },
+  {
+   "id": "fxG",
+   "sub": "Entrepreneur",
+   "age_hours": 22,
+   "num_comments": 28,
+   "score": 18,
+   "author": "op_agencyowner",
+   "url": "https://www.reddit.com/r/Entrepreneur/comments/fxG/example/",
+   "title": "Moving from small clients to bigger ones: how should I change my pricing?",
+   "body": "I run a small lead generation agency and charge per qualified meeting. Bigger companies are starting to reply. Price per meeting by company size, or switch to a retainer?",
+   "comments": []
+  },
+  {
+   "id": "fxH",
+   "sub": "FacebookAds",
+   "age_hours": 9,
+   "num_comments": 4,
+   "score": 3,
+   "author": "op_italia",
+   "url": "https://www.reddit.com/r/FacebookAds/comments/fxH/example/",
+   "title": "Cambiare pixel, quando conviene farlo?",
+   "body": "Il pixel traccia tutto correttamente ma i risultati sono peggiorati. Conviene crearne uno nuovo oppure è meglio aspettare? Grazie a tutti per i consigli.",
+   "comments": []
+  },
+  {
+   "id": "fxI",
+   "sub": "googleads",
+   "age_hours": 5,
+   "num_comments": 2,
+   "score": 1,
+   "author": "op_locked",
+   "locked": true,
+   "url": "https://www.reddit.com/r/googleads/comments/fxI/example/",
+   "title": "Locked thread about PMax",
+   "body": "Locked.",
+   "comments": []
+  },
+  {
+   "id": "fxJ",
+   "sub": "FacebookAds",
+   "age_hours": 2,
+   "num_comments": 1,
+   "score": 2,
+   "author": "op_freelancer",
+   "url": "https://www.reddit.com/r/FacebookAds/comments/fxJ/example/",
+   "title": "Looking for projects",
+   "body": "I am learning paid social and would like to work on real accounts for free to build experience.",
+   "comments": []
+  },
+  {
+   "id": "fxK",
+   "sub": "socialmedia",
+   "age_hours": 3,
+   "num_comments": 2,
+   "score": 4,
+   "author": "op_bakery",
+   "url": "https://www.reddit.com/r/socialmedia/comments/fxK/example/",
+   "title": "Small bakery owner: can anyone recommend an agency or tool to get us found on Google and ChatGPT?",
+   "body": "We are a two location bakery. Instagram is fine but nobody finds us on Google Maps, and when I asked ChatGPT for the best bakery in our town it named three competitors. Can anyone recommend an agency or a tool, or should I do it myself?",
+   "comments": []
+  }
+ ],
+ "rules": {
+  "googleads": {
+   "rules": [
+    {
+     "name": "Spam",
+     "description": ""
+    },
+    {
+     "name": "Rude / Offensive",
+     "description": ""
+    },
+    {
+     "name": "Low Quality Post",
+     "description": ""
+    },
+    {
+     "name": "Offensive Language In Title",
+     "description": ""
+    },
+    {
+     "name": "Coupons",
+     "description": ""
+    },
+    {
+     "name": "Personal Info",
+     "description": ""
+    },
+    {
+     "name": "Unapproved AMA",
+     "description": ""
+    },
+    {
+     "name": "Course Question",
+     "description": ""
+    },
+    {
+     "name": "No 'Dev/Founder Research' posts",
+     "description": ""
+    },
+    {
+     "name": "Job / Career Type Posts",
+     "description": ""
+    }
+   ],
+   "sidebar": "Google Ads help, discussion, and information."
+  },
+  "FacebookAds": {
+   "rules": [
+    {
+     "name": "No Promotional Posts",
+     "description": ""
+    },
+    {
+     "name": "Stay On Topic",
+     "description": ""
+    },
+    {
+     "name": "Job Posting",
+     "description": ""
+    },
+    {
+     "name": "Be Nice",
+     "description": ""
+    }
+   ],
+   "sidebar": "Best practices and strategies for Facebook and Instagram ads."
+  },
+  "Entrepreneur": {
+   "rules": [
+    {
+     "name": "No promotion, sales, or solicitation",
+     "description": ""
+    },
+    {
+     "name": "Original and human content only",
+     "description": "No AI generated posts or comments."
+    }
+   ],
+   "sidebar": "Not self-promotion. Please refrain from promoting personal blogs, consulting services."
+  }
+ },
+ "inbox": []
+}

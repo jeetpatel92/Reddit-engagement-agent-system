@@ -1,0 +1,19 @@
+{
+ "thread": {
+  "id": "fxB",
+  "sub": "FacebookAds",
+  "age_hours": 2,
+  "num_comments": 1,
+  "score": 2,
+  "author": "op_growthops",
+  "url": "https://www.reddit.com/r/FacebookAds/comments/fxB/example/",
+  "title": "How long do you wait before killing an ad when the sale lands 30 days after the click?",
+  "body": "We sell an annual plan with a free trial, so the purchase we care about shows up weeks after the click. Our rule turns ads off after twice the target cost with no conversion, which judges them on day three. We are clearly killing some winners and keeping some losers. Is there a sane way to set this per account, and to measure what the kills cost us?",
+  "comments": []
+ },
+ "posting_mode": "value_only",
+ "phase": "warmup",
+ "topic": "eval",
+ "sub_policy": "No self promotion.",
+ "reference_comment": ""
+}

@@ -1,0 +1,323 @@
+{
+  "_about": "Config for the /reddit-daily skill. Built 2026-09-25. Read with playbook.md — the playbook holds the voice and judgement rules, this file holds the numbers and lists. Change a rule here, not in the skill.",
+  "account": {
+    "username": "your_reddit_username",
+    "profile_url": "https://www.reddit.com/user/your_reddit_username/",
+    "created": "2026-01-01",
+    "_created_note": "Set to the account's cake day (YYYY-MM-DD). The phase 1 gate counts from it.",
+    "owner": "Jeet Patel, founder of YuvGro",
+    "posting_path": "manual",
+    "_posting_path_note": "VERIFIED 2026-09-25: reddit.com is blocked for Claude in Chrome AND the built-in browser ('not allowed due to safety restrictions'), Reddit serves a bot challenge to curl on its public .json endpoints, and WebSearch cannot return reddit.com results (Reddit blocks Anthropic's crawler). Claude therefore never reads or writes Reddit directly. Jeet opens the links, pastes the threads in, and posts the approved comments himself. Do not try to work around any of these blocks."
+  },
+  "session": {
+    "window_ist": "22:00-23:30",
+    "_window_note": "US midday — the largest Reddit audience is awake and threads posted that morning are still climbing. Outside the window, run anyway and note it in the report.",
+    "comments_per_day": {
+      "min": 3,
+      "target": 4,
+      "max": 5
+    },
+    "max_candidates_to_triage": 10,
+    "posting_gap_minutes": 5,
+    "_posting_gap_note": "New accounts hit Reddit's 'you are doing that too much' rate limit fast. Leave at least 5 minutes between comments, and don't post back-to-back in the same subreddit."
+  },
+  "phases": {
+    "warmup": {
+      "label": "Phase 1 — Warm-up",
+      "exit_gate": {
+        "min_account_age_days": 14,
+        "min_total_karma": 100,
+        "_rule": "BOTH must be true. Earliest possible exit: 2026-10-09."
+      },
+      "yuvgro_mentions_allowed": false,
+      "links_allowed": "none",
+      "_links_note": "No links of any kind in week 1 (new accounts with links are auto-filtered). From day 8, a link to a neutral authoritative source (Google's own docs, a standard) is fine when it genuinely helps. Never yuvgro.com.",
+      "original_posts_allowed": false,
+      "max_comments_per_sub_per_week": 3,
+      "prefer_subs": [
+        "smallbusiness",
+        "Entrepreneur",
+        "EntrepreneurRideAlong",
+        "sweatystartup",
+        "GoogleMyBusiness",
+        "SaaS",
+        "SEO",
+        "DigitalMarketing",
+        "marketing",
+        "googleads",
+        "FacebookAds",
+        "ecommerce",
+        "shopify",
+        "Wordpress"
+      ],
+      "_prefer_subs_note": "Mirrors the 'Warm-up friendly ✅' column in subreddits.md — keep the two in sync. In phase 1 the search pack only offers these."
+    },
+    "established": {
+      "label": "Phase 2 — Established",
+      "yuvgro_mention_ratio_max": 0.1,
+      "_ratio_rule": "Counted over the trailing 30 posted comments. A link to yuvgro.com counts as a mention even if the name isn't written.",
+      "max_mentions_per_day": 1,
+      "min_days_between_mentions_in_same_sub": 14,
+      "max_yuvgro_links_per_7_days": 1,
+      "min_fit_score_for_mention": 8,
+      "original_posts": {
+        "max_per_week": 1,
+        "links_in_body": false,
+        "_note": "Insight or data posts only, in subs whose rules allow them. No link in the body; if someone asks for the source, answer in a comment."
+      },
+      "max_comments_per_sub_per_week": 5
+    }
+  },
+  "freshness": {
+    "prefer_max_age_hours": 24,
+    "accept_max_age_hours": 72,
+    "accept_older_if": "still active (a comment in the last 24h) and under ~50 comments",
+    "skip_if": [
+      "archived",
+      "locked",
+      "removed by moderators",
+      "more than 150 comments and the question is already well answered"
+    ],
+    "evergreen_geo_threads": "Phase 2 only. An older thread that Google ranks for '[keyword] reddit' is worth a genuinely better answer even if it is weeks old, because ChatGPT and AI Overviews pull from exactly those threads (see Internal/SOP_Reddit_Modifier_Interception_GEO.pdf). Must not be archived."
+  },
+  "proof_points": {
+    "_rule": "Experience first. Use a number only when the comment genuinely needs it to be credible — e.g. someone asks 'have you actually done this?'. These four are the ONLY numbers allowed; each is published on https://yuvgro.com/about/ (verified 2026-09-25). Never tie any of them to a client, project or company name.",
+    "allowed": [
+      "10+ years in digital marketing",
+      "led teams of 15+",
+      "140+ page-one rankings across past work",
+      "2,000% organic sales growth for a past client"
+    ],
+    "never_name": "any client, employer or project — Jeet's standing instruction 2026-09-25"
+  },
+  "commercial_rules": {
+    "pricing": "Honest market ranges framed as 'typically' or 'what I usually see'. NEVER quote YuvGro's own prices in a comment or reply, even if asked — move that conversation to a DM the other person starts, and even there Jeet quotes, not the agent.",
+    "competitors": "May recommend another tool, agency or freelancer when that is the better fit for the person. Never criticise a named competitor.",
+    "dms": "Never send a cold DM. Only reply to DMs the other person started."
+  },
+  "links": {
+    "base": "https://yuvgro.com/",
+    "_verified": "All 22 returned HTTP 200 on 2026-09-25. Format is https://yuvgro.com/<slug>/ — /blog/<slug>/ 301s here. Never link the homepage.",
+    "by_topic": {
+      "ai_search_geo": [
+        "geo-definitive-guide",
+        "get-cited-chatgpt-perplexity-ai-overviews",
+        "answer-engine-optimization",
+        "ai-optimization-aio-explained",
+        "optimize-content-ai-mode-selection",
+        "information-agents-seo"
+      ],
+      "schema": [
+        "schema-markup-ai-mode"
+      ],
+      "seo_general": [
+        "seo-checklist",
+        "technical-seo-audit-a-step-by-step-process",
+        "topic-cluster-strategy-guide"
+      ],
+      "backlinks": [
+        "build-high-quality-backlinks",
+        "skyscraper-technique"
+      ],
+      "saas_seo": [
+        "seo-for-saas-playbook"
+      ],
+      "local_seo": [
+        "local-seo-guide-for-multi-location-businesses"
+      ],
+      "reviews_orm": [
+        "handle-negative-google-reviews",
+        "online-reputation-management-complete-guide"
+      ],
+      "website_platform": [
+        "wordpress-vs-webflow-vs-custom"
+      ],
+      "content_strategy": [
+        "b2b-content-marketing-strategy",
+        "content-calendar-guide",
+        "digital-marketing-strategy-from-scratch"
+      ],
+      "social": [
+        "instagram-marketing",
+        "linkedin-marketing-strategy-for-b2b-companies"
+      ]
+    },
+    "no_article_yet": [
+      "crm_erp",
+      "automation",
+      "paid_ads",
+      "ecommerce_platforms"
+    ],
+    "_no_article_note": "No post exists for these. Comments on them never carry a yuvgro.com link. Log the topics that keep coming up — they are blog-post ideas."
+  },
+  "topic_rotation_by_weekday": {
+    "_note": "Sets the day's search pack. Every service is covered each week. Replies and inbox are handled every day regardless.",
+    "Mon": "ai_search",
+    "Tue": "local_seo_reviews",
+    "Wed": "web_crm_automation",
+    "Thu": "saas_startup_growth",
+    "Fri": "paid_social_orm",
+    "Sat": "ecommerce_midmarket",
+    "Sun": "agency_and_open"
+  },
+  "topics": {
+    "ai_search": {
+      "subs": [
+        "SEO",
+        "DigitalMarketing",
+        "marketing",
+        "SaaS",
+        "bigseo"
+      ],
+      "queries": [
+        "\"ai overviews\" traffic",
+        "chatgpt recommend my business",
+        "\"ai search\" visibility",
+        "perplexity citations",
+        "\"llms.txt\"",
+        "GEO optimization"
+      ]
+    },
+    "local_seo_reviews": {
+      "subs": [
+        "smallbusiness",
+        "sweatystartup",
+        "GoogleMyBusiness",
+        "LawFirm",
+        "restaurateur"
+      ],
+      "queries": [
+        "google business profile",
+        "map pack ranking",
+        "negative google review",
+        "\"near me\" not showing",
+        "local seo worth it",
+        "getting more reviews"
+      ]
+    },
+    "web_crm_automation": {
+      "subs": [
+        "Wordpress",
+        "webflow",
+        "CRM",
+        "hubspot",
+        "automation",
+        "n8n",
+        "ERP"
+      ],
+      "queries": [
+        "wordpress or webflow",
+        "website redesign cost",
+        "which crm small business",
+        "booking system website",
+        "automate lead follow up",
+        "erp implementation small business"
+      ]
+    },
+    "saas_startup_growth": {
+      "subs": [
+        "SaaS",
+        "startups",
+        "B2BSaaS",
+        "EntrepreneurRideAlong",
+        "Entrepreneur"
+      ],
+      "queries": [
+        "saas seo",
+        "organic traffic declining",
+        "content marketing b2b not working",
+        "first 100 customers marketing",
+        "seo agency worth it"
+      ]
+    },
+    "paid_social_orm": {
+      "subs": [
+        "PPC",
+        "googleads",
+        "FacebookAds",
+        "socialmedia",
+        "Entrepreneur"
+      ],
+      "queries": [
+        "google ads wasting money",
+        "cost per lead too high",
+        "meta ads not converting",
+        "bad reviews online reputation",
+        "social media for small business"
+      ]
+    },
+    "ecommerce_midmarket": {
+      "subs": [
+        "ecommerce",
+        "shopify",
+        "marketing",
+        "sales",
+        "CEO"
+      ],
+      "queries": [
+        "shopify seo",
+        "product pages chatgpt",
+        "ecommerce organic traffic",
+        "marketing agency vs in-house",
+        "attribution which marketing works"
+      ]
+    },
+    "agency_and_open": {
+      "subs": [
+        "agency",
+        "marketing",
+        "Entrepreneur",
+        "smallbusiness"
+      ],
+      "queries": [
+        "white label seo",
+        "white label web development",
+        "subcontract development agency",
+        "agency outsourcing"
+      ]
+    }
+  },
+  "search_url_templates": {
+    "sub_new": "https://www.reddit.com/r/{sub}/new/",
+    "sub_search": "https://www.reddit.com/r/{sub}/search/?q={q}&restrict_sr=1&sort=new&t=week",
+    "sitewide_search": "https://www.reddit.com/search/?q={q}&sort=new&t=day",
+    "google_evergreen": "https://www.google.com/search?q={q}+reddit&tbs=qdr:m6",
+    "_google_note": "Phase 2 only: finds threads under 6 months old that Google ranks for '[keyword] reddit' — the ones AI answers cite."
+  },
+  "notion": {
+    "companies_ds": "YOUR_NOTION_COMPANIES_DS_ID",
+    "contacts_ds": "YOUR_NOTION_CONTACTS_DS_ID",
+    "deals_ds": "YOUR_NOTION_DEALS_DS_ID",
+    "source_value": "Reddit",
+    "_source_note": "Option added to Companies.Source on 2026-09-25 (all four existing options — Apollo, Apify, Referral, Inbound — preserved). Contacts has NO Source field: record 'Source: Reddit — <thread url> — u/<handle>' in the Contact's Response Notes.",
+    "icp_segment_options": [
+      "🇮🇳 Indian SMB",
+      "🌍 Global B2B SaaS",
+      "📍 Local Business",
+      "🤝 Agency White-label",
+      "🏢 Mid-market Brand",
+      "🤖 AI Automation",
+      "💻 Web/CRM/ERP Dev"
+    ],
+    "region_map": {
+      "United States": "🇺🇸 USA",
+      "Canada": "🇨🇦 Canada",
+      "Australia": "🇦🇺 ANZ",
+      "New Zealand": "🇦🇺 ANZ",
+      "India": "🇮🇳 India"
+    },
+    "region_fallback": "🌍 Other",
+    "write_when": "Only when someone shows buying intent (see playbook → Leads). Never log ordinary commenters as contacts.",
+    "_never_invent": "Never invent a select option. Industry has known gaps — pick the nearest and put the true sector in Internal Notes."
+  },
+  "files": {
+    "playbook": "reddit-engagement/playbook.md",
+    "subreddits": "reddit-engagement/subreddits.md",
+    "experience_bank": "reddit-engagement/experience-bank.md",
+    "comment_log": "reddit-engagement/log/comments.jsonl",
+    "account_log": "reddit-engagement/log/account.jsonl",
+    "tool": "reddit-engagement/scripts/reddit.py"
+  },
+  "booking_link": "https://your.booking.link",
+  "_booking_link_note": "Used only in DM drafts Jeet sends himself, and only when someone asked to talk."
+}

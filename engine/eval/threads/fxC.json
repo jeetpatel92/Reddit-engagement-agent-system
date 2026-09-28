@@ -1,0 +1,56 @@
+{
+ "thread": {
+  "id": "fxC",
+  "sub": "googleads",
+  "age_hours": 20,
+  "num_comments": 12,
+  "score": 2,
+  "author": "op_homeservices",
+  "url": "https://www.reddit.com/r/googleads/comments/fxC/example/",
+  "title": "Home services account: calls are the main conversion and the tracking is a mess",
+  "body": "Running search for a small group of home services locations. Phone calls are where the money is and most jobs book on the first call. Right now calls from ads over a minute and form fills are primary conversions, website calls are secondary because I cannot filter them by duration. Ad groups by service, tight phrase and exact keywords. Performance is poor and I am not sure where to look first.",
+  "comments": [
+   {
+    "id": "c1",
+    "author": "commenter_1",
+    "body": "Send qualified calls back as offline conversions from your call tracking tool, with a duration filter.",
+    "score": 5,
+    "replies": [
+     {
+      "id": "c1r",
+      "author": "op_homeservices",
+      "body": "Setting that up now, thanks.",
+      "score": 2,
+      "replies": []
+     }
+    ]
+   },
+   {
+    "id": "c2",
+    "author": "commenter_2",
+    "body": "What is your impression share? If budget is limited you may only be showing late in the day.",
+    "score": 3,
+    "replies": []
+   },
+   {
+    "id": "c3",
+    "author": "commenter_3",
+    "body": "Look at each location separately rather than one account average.",
+    "score": 3,
+    "replies": []
+   },
+   {
+    "id": "c4",
+    "author": "commenter_4",
+    "body": "Test broader targeting slowly once conversion data is clean.",
+    "score": 4,
+    "replies": []
+   }
+  ]
+ },
+ "posting_mode": "value_only",
+ "phase": "warmup",
+ "topic": "eval",
+ "sub_policy": "No self promotion.",
+ "reference_comment": ""
+}

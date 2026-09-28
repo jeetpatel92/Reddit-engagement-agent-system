@@ -1,0 +1,48 @@
+{
+ "thread": {
+  "id": "fxD",
+  "sub": "googleads",
+  "age_hours": 30,
+  "num_comments": 15,
+  "score": 8,
+  "author": "op_brandmarketer",
+  "url": "https://www.reddit.com/r/googleads/comments/fxD/example/",
+  "title": "Account structure for a candle and home fragrance brand with 60 products",
+  "body": "In house marketer, not a PPC specialist. 60 products across candles, diffusers, gift sets and refills. We run one Performance Max campaign plus brand search. Should we split by category, margin or best sellers? Is Standard Shopping or non brand search still worth running next to PMax?",
+  "comments": [
+   {
+    "id": "d1",
+    "author": "commenter_5",
+    "body": "Start with your best sellers in their own campaign and keep the rest together.",
+    "score": 6,
+    "replies": []
+   },
+   {
+    "id": "d2",
+    "author": "commenter_6",
+    "body": "Label the feed by margin before splitting anything.",
+    "score": 5,
+    "replies": []
+   },
+   {
+    "id": "d3",
+    "author": "commenter_7",
+    "body": "Do not over segment; structure around economics, not the catalogue tree.",
+    "score": 7,
+    "replies": []
+   },
+   {
+    "id": "d4",
+    "author": "commenter_8",
+    "body": "Feed titles and images matter as much as campaign structure.",
+    "score": 4,
+    "replies": []
+   }
+  ]
+ },
+ "posting_mode": "value_only",
+ "phase": "warmup",
+ "topic": "eval",
+ "sub_policy": "No self promotion.",
+ "reference_comment": ""
+}

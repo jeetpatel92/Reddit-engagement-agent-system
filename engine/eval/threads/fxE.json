@@ -1,0 +1,19 @@
+{
+ "thread": {
+  "id": "fxE",
+  "sub": "googleads",
+  "age_hours": 60,
+  "num_comments": 14,
+  "score": 4,
+  "author": "op_foodtruck",
+  "url": "https://www.reddit.com/r/googleads/comments/fxE/example/",
+  "title": "Late night food truck: how do I get more orders from people searching on Google?",
+  "body": "We park in the same spot Thursday to Sunday, 8pm to 2am. We have a Google profile but barely show up.",
+  "comments": []
+ },
+ "posting_mode": "value_only",
+ "phase": "warmup",
+ "topic": "eval",
+ "sub_policy": "No self promotion.",
+ "reference_comment": ""
+}

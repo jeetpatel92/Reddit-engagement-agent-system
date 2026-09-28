@@ -1,0 +1,19 @@
+{
+ "thread": {
+  "id": "fxA",
+  "sub": "FacebookAds",
+  "age_hours": 1,
+  "num_comments": 2,
+  "score": 1,
+  "author": "op_candles",
+  "url": "https://www.reddit.com/r/FacebookAds/comments/fxA/example/",
+  "title": "Two sales on day three, nothing on day four. Normal or broken?",
+  "body": "Small candle store, first proper Meta test. One campaign, one broad ad set, four creatives, about $25 a day optimised for purchases. Day three brought two sales from one creative. Day four: CTR halved, CPC tripled, zero add to carts, and most of the budget gone by lunchtime. Should I leave it alone, and how do I tell which creative is actually working when Meta spends almost everything on one of them?",
+  "comments": []
+ },
+ "posting_mode": "value_only",
+ "phase": "warmup",
+ "topic": "eval",
+ "sub_policy": "No self promotion.",
+ "reference_comment": ""
+}
